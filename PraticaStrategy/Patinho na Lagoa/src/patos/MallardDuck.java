@@ -1,10 +1,17 @@
 package patos;
 
-public class MallardDuck {
+import quacks.Quack;
+import voos.FlyWithWings;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+public class MallardDuck extends Duck {
 
-	}
+    public MallardDuck() {
+        quackBehavior = new Quack();
+        flyBehavior = new FlyWithWings();
+    }
 
+    @Override
+    public void display() {
+        System.out.println("I'm a real Mallard Duck");
+    }
 }

@@ -1,10 +1,7 @@
 package quacks;
 
-public class MuteQuack {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+public class MuteQuack  implements QuackBehavior{
+	public void quack() {
+		System.out.println("<<Silence>>");
 	}
-
 }

@@ -1,10 +1,8 @@
 package quacks;
 
-public class Quack {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
+public class Quack implements QuackBehavior {
+ public void quack() {
+	 System.out.println("Quack");
+ }
+	
 }
